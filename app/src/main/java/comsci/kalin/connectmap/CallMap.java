@@ -26,7 +26,7 @@ public class CallMap extends AppCompatActivity {
         String lng = longtitude.getText().toString().trim();
         String mlable = lable.getText().toString().trim();
 
-        Uri location = Uri.parse("http://maps.google.com/maps?q=loc:13.759617,100.542439(ศูนย์รางน้ำ)");
+        Uri location = Uri.parse("http://maps.google.com/maps?q=loc:"+lat+","+lng+"("+mlable+")");
 
         Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
         //mapIntent.setPackage("com.google.android.apps.maps");  // ใช้ไม่ได้กับ GenyMotion
